@@ -63,7 +63,8 @@ Output: "213"  */
 
 function permutations(n, k) {
     let arr = [];
-    // Write you logic here. 
+    // Write you logic here.
+    skip 
     return arr
 };
 
