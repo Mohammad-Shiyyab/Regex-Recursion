@@ -2,12 +2,17 @@
 
 function division(number, dividedBy) {
     // Write you logic here.
-   if(dividedBy === 0){
-    return 0;
-
-   }
+    
     return number/dividedBy;
-   
+    if (number < dividedBy || dividedBy === 0) return 0;
+    return 1 + division(number - dividedBy, dividedBy)
+    
+    
+//    if(dividedBy === 0){
+//     return 0;
+
+//    }
+    
     
 }
 
@@ -19,13 +24,19 @@ pow(2,4) = 16
 
 function pow(x, n) {
     // Write you logic here.
-    if(n == 0)
-       return 1;
-     
-    if(x == 0)
-        return 0;
+    
+    if (n === 1) return x;
+    if (n < 1) return 1;
+    return x * pow(x, n - 1)
+    
 
-    return  x*pow(x , n-1);
+    // if(n == 0)
+    //    return 1;
+     
+    // if(x == 0)
+    //     return 0;
+
+    // return  x*pow(x , n-1);
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -37,15 +48,18 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n) {
     // Write you logic here.
+    if (n === 0) return 0
+    if (n === 1) return 1
+
+    return fibonacci(n - 1) + fibonacci(n - 2)
     
     
-        if (n <= 1)
-            return n;
-        return fibonacci(n-1) + fibonacci(n-2);
+        // if (n <= 1)
+        //     return n;
+        // return fibonacci(n-1) + fibonacci(n-2);
     }
 
-    document.write(fibonacci(n));
-
+    
 
 /* Optional 
 The set [1, 2, 3, ..., n] contains a total of n! unique permutations.
@@ -64,8 +78,9 @@ Output: "213"  */
 function permutations(n, k) {
     let arr = [];
     // Write you logic here.
-    skip 
-    return arr
+    
+    
+    skip
 };
 
 
