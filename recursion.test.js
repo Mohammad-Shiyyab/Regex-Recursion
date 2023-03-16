@@ -8,10 +8,7 @@ function division(number, dividedBy) {
     return 1 + division(number - dividedBy, dividedBy)
     
     
-//    if(dividedBy === 0){
-//     return 0;
-
-//    }
+//    
     
     
 }
@@ -30,13 +27,7 @@ function pow(x, n) {
     return x * pow(x, n - 1)
     
 
-    // if(n == 0)
-    //    return 1;
-     
-    // if(x == 0)
-    //     return 0;
-
-    // return  x*pow(x , n-1);
+    
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -54,9 +45,7 @@ function fibonacci(n) {
     return fibonacci(n - 1) + fibonacci(n - 2)
     
     
-        // if (n <= 1)
-        //     return n;
-        // return fibonacci(n-1) + fibonacci(n-2);
+        
     }
 
     
